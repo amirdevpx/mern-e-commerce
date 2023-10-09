@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* colors */
+    --light: #fff;
+    --dark: #000;
+
+    --primary-normal: #3b82f6;
+    --primary-light: #eff6ff;
+    --primary-darker: #2563eb;
+
+    --danger-normal: #ef4444;
+    --danger-light: #fef2f2;
+    --danger-darker: #dc2626;
+
+    --warning-normal: #fefce8;
+    --warning-light: #fef9c3;
+    --warning-darker: #ca8a04;
+
+    --success-normal: #22c55e;
+    --success-light: #f0fdf4;
+    --success-darker: #16a34a;
+
+    --muted-normal: #6b7280;
+    --muted-light: #f3f4f6;
+    --muted-lighter: #94a3b8;
+    --muted-darker: #4b5563;
+  }
+
+  body {
+    @apply w-full font-montserrat font-normal text-base text-dark bg-light;
+  }
+
+  svg {
+    @apply w-5 h-5 overflow-hidden
+  }
+}
+
+@layer utilities {
+  .-webkit-box-vertical {
+    -webkit-box-orient: vertical;
+  }
+
+  .-webkit-box {
+    display: -webkit-box;
+  }
+
+  .-webkit-line-1 {
+    -webkit-line-clamp: 1;
+  }
+  .-webkit-line-2 {
+    -webkit-line-clamp: 2;
+  }
+  .-webkit-line-3 {
+    -webkit-line-clamp: 3;
+  }
+}
